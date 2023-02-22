@@ -6,10 +6,10 @@ const URL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a';
 const mode = localStorage.getItem('mode');
 
 window.addEventListener('DOMContentLoaded', () => {
-  presentDrinks(URL);
   if (mode === 'dark') {
     document.documentElement.classList.add('dark-mode');
   }
+  presentDrinks(URL);
 });
 
 const modeToggle = getElement('.mode-toggle');

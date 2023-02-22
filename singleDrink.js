@@ -17,10 +17,10 @@ const presentDrink = async () => {
 const mode = localStorage.getItem('mode');
 
 window.addEventListener('DOMContentLoaded', () => {
-  presentDrink();
   if (mode === 'dark') {
     document.documentElement.classList.add('dark-mode');
   }
+  presentDrink();
 });
 
 const modeToggle = getElement('.mode-toggle');
